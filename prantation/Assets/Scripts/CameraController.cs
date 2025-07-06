@@ -20,7 +20,8 @@ public class CameraController : MonoBehaviour
         Vector2 mousePosScreen = Camera.main.ScreenToWorldPoint(mousePos);
         //bordas = valor da área pro mouse poder se mexer
         //screen.height e width = valor da altura e largura da tela (valores de resolução)
-        // se a posição do mouse y for maior que a altura (1200) menos borda (20) = 1180, ou seja, se o mouse estiver no 1180 pra cima, vai se mexer
+        // se a posição do mouse y for maior que a altura (1200) menos borda (20) = 1180, ou seja, se o mouse estiver no 1180 pra cima, vai se mexer.
+        //O mesmo se aplica para baixo: se a posição do mouse for menor que borda (20) mover para baixo.
         if (mousePos.y > Screen.height - bordas || mousePos.y < bordas || mousePos.x > Screen.width - bordas || mousePos.x < bordas)
         {
             Camera.main.transform.Translate(mousePosScreen.normalized * 3 * Time.deltaTime);
