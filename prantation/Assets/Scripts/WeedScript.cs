@@ -5,7 +5,7 @@ public class WeedScript : MonoBehaviour
 {
     [SerializeField] float timeToGrow = 0.5f; // Time in minutes for the weed to grow
     [SerializeField] Sprite[] spritesToChange = new Sprite[4];
-    [Tooltip("Os sprites para diferentes tipos de tamanho (0%,25%, 50%, 100%")]
+    [Tooltip("Os sprites para diferentes tipos de tamanho (0%,50%, 75%, 100%")]
     SpriteRenderer spriteRenderer;
     float lastGrowth;
     void Start()
@@ -54,25 +54,25 @@ public class WeedScript : MonoBehaviour
     void CheckPercent(float numberToDiscover, float numberToApplyPercent)
     {
         float percent = (numberToApplyPercent / numberToDiscover) * 100;
-        if (percent < 25f) return;
-        else if (percent >= 25f && percent < 50f && lastGrowth == 0)
+        if (percent < 50f) return;
+        else if (percent >= 50 && percent < 75f && lastGrowth == 0)
         {
             lastGrowth += 1;
             spriteRenderer.sprite = spritesToChange[1];
-            StartCoroutine(Bobbing(0.5f));
+            StartCoroutine(Bobbing(0.25f));
         }
-        else if(percent >= 50f && percent < 75f && lastGrowth == 1)
+        else if(percent >= 75f && percent < 100f && lastGrowth == 1)
         {
             lastGrowth += 1;
             spriteRenderer.sprite = spritesToChange[2];
-            StartCoroutine(Bobbing(0.5f));
+            StartCoroutine(Bobbing(0.25f));
             return;
         }
         else if(percent >= 100f && lastGrowth == 2)
         {
             lastGrowth += 1;
             spriteRenderer.sprite = spritesToChange[3];
-            StartCoroutine(Bobbing(0.5f));
+            StartCoroutine(Bobbing(0.25f));
             return;
         }
     }

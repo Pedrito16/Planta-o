@@ -1,31 +1,10 @@
 fileFormatVersion: 2
-guid: c417d5b214d6e954690a12f5a2317076
+guid: 89e34775e97f96147991d92f2355c117
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8872200077480915516
-    second: Trigo_0
-  - first:
-      213: 546716310443632952
-    second: Trigo_1
-  - first:
-      213: 7588795863894206036
-    second: Trigo_2
-  - first:
-      213: -2451891015545272718
-    second: Trigo_3
-  - first:
-      213: -873684446632054602
-    second: Trigo_4
-  - first:
-      213: 1070597295221000122
-    second: Trigo_5
-  - first:
-      213: 890371796621754579
-    second: Trigo_6
-  - first:
-      213: -7300884197171562176
-    second: Trigo_7
+      213: 3144830150192890798
+    second: Terras_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,119 +96,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trigo_0
+      name: Terras_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 24
-        width: 21
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5167524, y: 0.1}
+        y: 33
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cd8e85590d9fd480800000000000000
-      internalID: -8872200077480915516
+      spriteID: ea38f2d0c5ea4ab20800000000000000
+      internalID: 3144830150192890798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trigo_1
+      name: Terras_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 24
-        width: 21
-        height: 24
-      alignment: 9
-      pivot: {x: 0.51340204, y: 0.1}
+        x: 0
+        y: 22
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 839a7e47693569700800000000000000
-      internalID: 546716310443632952
+      spriteID: 7de3743f3a947bf4383a909d8dbb5d89
+      internalID: -741727241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trigo_2
+      name: Terras_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dedef775db9af340aa83465a6c764c1
+      internalID: -1997374755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terras_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 21
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4562e5c81a1d05960800000000000000
-      internalID: 7588795863894206036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trigo_3
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 21
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 276c37eac1229fdd0800000000000000
-      internalID: -2451891015545272718
+      spriteID: 883cef89b8d50694abd7ea7b3d6365c4
+      internalID: -215295926
       vertices: []
       indices: 
       edges: []
@@ -238,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30e02547d6d152e4da5802f57ddb898c
+    spriteID: beed3db227296f94ca77b99d07c4f8b3
     internalID: 0
     vertices: []
     indices: 
@@ -248,10 +201,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trigo_0: -8872200077480915516
-      Trigo_1: 546716310443632952
-      Trigo_2: 7588795863894206036
-      Trigo_3: -2451891015545272718
+      Terras_0: 3144830150192890798
+      Terras_1: -741727241
+      Terras_2: -1997374755
+      Terras_3: -215295926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
