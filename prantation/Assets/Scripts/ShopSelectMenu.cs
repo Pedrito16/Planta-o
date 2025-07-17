@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using JetBrains.Annotations;
+using Unity.VisualScripting;
 public class ShopSelectMenu : MonoBehaviour
 {
     [SerializeField] SelectEffect[] items;
@@ -13,8 +15,26 @@ public class ShopSelectMenu : MonoBehaviour
     void Start()
     {
         items = GetComponentsInChildren<SelectEffect>();
+        Lock();
     }
-
+    void Lock()
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            SelectEffect item = items[i];
+            if (i == 0)
+            {
+                item.locked = false;
+                i += 1;
+                items[i].Lock(true);
+            }
+            else
+            {
+                item.Lock(true);
+                item.selectedBackground.gameObject.SetActive(false);
+            }
+        }
+    }
     public void SelectOther(SelectEffect selectNext)
     {
         if (currentActive == null) currentActive = selectNext;

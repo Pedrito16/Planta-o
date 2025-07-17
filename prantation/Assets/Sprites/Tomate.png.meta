@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: c417d5b214d6e954690a12f5a2317076
+guid: edd870e7c6803d348b34b86343620891
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8872200077480915516
-    second: Trigo_0
+      213: 8236432160196758994
+    second: Tomate_0
   - first:
-      213: 546716310443632952
-    second: Trigo_1
+      213: -7302708494867152740
+    second: Tomate_1
   - first:
-      213: 7588795863894206036
-    second: Trigo_2
+      213: 3932079975380651635
+    second: Tomate_2
   - first:
-      213: -2451891015545272718
-    second: Trigo_3
-  - first:
-      213: -873684446632054602
-    second: Trigo_4
-  - first:
-      213: 1070597295221000122
-    second: Trigo_5
-  - first:
-      213: 890371796621754579
-    second: Trigo_6
-  - first:
-      213: -7300884197171562176
-    second: Trigo_7
+      213: 359486188378683659
+    second: Tomate_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trigo_0
+      name: Tomate_0
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cd8e85590d9fd480800000000000000
-      internalID: -8872200077480915516
+      spriteID: 2dd8125496fad4270800000000000000
+      internalID: 8236432160196758994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trigo_1
+      name: Tomate_1
       rect:
         serializedVersion: 2
         x: 21
@@ -184,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 839a7e47693569700800000000000000
-      internalID: 546716310443632952
+      spriteID: c904739b05197aa90800000000000000
+      internalID: -7302708494867152740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trigo_2
+      name: Tomate_2
       rect:
         serializedVersion: 2
         x: 0
@@ -206,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4562e5c81a1d05960800000000000000
-      internalID: 7588795863894206036
+      spriteID: 37e8df097ed819630800000000000000
+      internalID: 3932079975380651635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trigo_3
+      name: Tomate_3
       rect:
         serializedVersion: 2
         x: 21
@@ -228,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 276c37eac1229fdd0800000000000000
-      internalID: -2451891015545272718
+      spriteID: b0978ff98c62df400800000000000000
+      internalID: 359486188378683659
       vertices: []
       indices: 
       edges: []
@@ -238,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30e02547d6d152e4da5802f57ddb898c
+    spriteID: 3bf973e678ada6e4c8f911b1eb1a15ef
     internalID: 0
     vertices: []
     indices: 
@@ -248,10 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trigo_0: -8872200077480915516
-      Trigo_1: 546716310443632952
-      Trigo_2: 7588795863894206036
-      Trigo_3: -2451891015545272718
+      Tomate_0: 8236432160196758994
+      Tomate_1: -7302708494867152740
+      Tomate_2: 3932079975380651635
+      Tomate_3: 359486188378683659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
