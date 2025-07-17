@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-public class PlantCollector : MonoBehaviour, IPointerClickHandler
+public class PlantCollector : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] GrowScript growScript;
 
@@ -14,11 +14,11 @@ public class PlantCollector : MonoBehaviour, IPointerClickHandler
 
     void Update()
     {
-        
-    }
-    public void OnPointerClick(PointerEventData eventData)
+
+    }   
+    public void OnPointerDown(PointerEventData eventData)
     {
-        if(growScript.hasGrown)
+        if (growScript.hasGrown)
         {
             Destroy(gameObject); // Destrói o objeto da planta
         }
