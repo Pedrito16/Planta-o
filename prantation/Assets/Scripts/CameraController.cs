@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] Transform bounds;
     [SerializeField] float bordas;
 
     [Header("Camera Clamp Settings")]
