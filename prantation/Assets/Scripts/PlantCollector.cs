@@ -23,7 +23,7 @@ public class PlantCollector : MonoBehaviour, IPointerDownHandler
             if (shopSelectMenu.nextToUnlock.plantInfo.cropTypeToUnlock == growScript.info)
                 shopSelectMenu.amountOfCropsToUnlock -= 1;
             PlantSeeds.instance.plantQuantity -= 1;
-            PlayerInfos.instance.AddMoney(growScript.info.value);
+            PlayerInfos.instance.AddMoney(growScript.info.amountOfMoneyThatGives);
             Destroy(gameObject); // Destrói o objeto da planta
         }
     }

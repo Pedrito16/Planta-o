@@ -18,9 +18,13 @@ public class PlantSeeds : MonoBehaviour
     {
         
     }
+    public bool CheckIfHasSpace()
+    {
+        return plantQuantity <= maxTiles;
+    }
     public void Plant(PlantInfo plantInfo)
     {
-        if (plantQuantity >= maxTiles) return;
+        if (!CheckIfHasSpace()) return;
         plantQuantity += 1;
         GameObject plant = Instantiate(plantToInstantiate, transform);
         plant.GetComponent<GrowScript>().Setup(plantInfo);

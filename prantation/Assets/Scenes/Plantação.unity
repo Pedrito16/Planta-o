@@ -845,7 +845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bordas: 20
   height: {x: -4.56, y: 5.49}
-  width: {x: -4.77, y: 20.31}
+  width: {x: -4.77, y: 21.5}
   moveSpeed: 6
   moveHorizontal: 1
   moveVertical: 0
@@ -1735,7 +1735,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 810116845}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810116842}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &810116845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,7 +1830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d73bc8bf417bf448dde1da9e4f1009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 99
+  money: 3
   moneyText: {fileID: 2045231268}
 --- !u!1 &998389366
 GameObject:
@@ -3728,7 +3740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantToInstantiate: {fileID: 9164967250305655620, guid: 3ae5c6be88bbe324696ccdf6f028d2ba, type: 3}
   firstSpawn: {fileID: 1151333943}
-  maxTiles: 5
+  maxTiles: 10
   spacing: 3
   plants: []
   plantQuantity: 0
@@ -3864,10 +3876,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  nextToUnlock: {fileID: 0}
+  unlockText: {fileID: 619679743}
   amountOfCropsToUnlock: 0
   isSelecting: 0
   currentActive: {fileID: 0}
+  nextToUnlock: {fileID: 0}
 --- !u!1 &1746822770
 GameObject:
   m_ObjectHideFlags: 0
@@ -8866,7 +8879,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.58
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

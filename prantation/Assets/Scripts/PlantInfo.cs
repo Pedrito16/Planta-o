@@ -5,6 +5,7 @@ public class PlantInfo : ScriptableObject
 {
     public string Name;
     public int value;
+    public int amountOfMoneyThatGives;
     public float timeToGrows;
     public PlantInfo cropTypeToUnlock;
     public int cropsUntilUnlock;

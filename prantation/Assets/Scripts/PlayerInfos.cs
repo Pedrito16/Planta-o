@@ -11,17 +11,12 @@ public class PlayerInfos : MonoBehaviour
     }
     void Start()
     {
-        moneyText.text = money.ToString();
+        moneyText.text = "Dinheiro: " + money.ToString();
     }
     public void AddMoney(int quantity)
     {
         money += quantity;
-        moneyText.text = money.ToString();
-    }
-    public void SubtractMoney(int quantity)
-    {
-        money -= Mathf.Abs(quantity);
-        moneyText.text = money.ToString();
+        moneyText.text = "Dinheiro: " + money.ToString();
     }
     void Update()
     {

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Cenoura
   value: 35
+  amountOfMoneyThatGives: 70
   timeToGrows: 40
   cropTypeToUnlock: {fileID: 11400000, guid: d60ae0ed6cac74d41b3d995610d02596, type: 2}
   cropsUntilUnlock: 10

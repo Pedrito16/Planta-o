@@ -13,7 +13,6 @@ public class OnSelectPlant : MonoBehaviour
         instance = this;
         nameText.gameObject.SetActive(false);
         costText.gameObject.SetActive(false);
-        menu.SetActive(false);
     }
     void Start()
     {
@@ -24,11 +23,11 @@ public class OnSelectPlant : MonoBehaviour
         SelectEffect currentActive = ShopSelectMenu.instance.currentActive;
         if (currentActive == null) return;
         int money = PlayerInfos.instance.money;
-        if (money >= currentActive.plantInfo.value)
+        if (money >= currentActive.plantInfo.value && PlantSeeds.instance.CheckIfHasSpace())
         {
             buyButton.interactable = true;
             buyButton.GetComponent<Image>().color = Color.green;
-            PlayerInfos.instance.SubtractMoney(currentActive.plantInfo.value);
+            PlayerInfos.instance.AddMoney(-currentActive.plantInfo.value); //subtrai o valor
             PlantSeeds.instance.Plant(currentActive.plantInfo);
         }
         else

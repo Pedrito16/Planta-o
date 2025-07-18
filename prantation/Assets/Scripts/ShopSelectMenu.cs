@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 public class ShopSelectMenu : MonoBehaviour
 {
     [SerializeField] SelectEffect[] items;
-    public SelectEffect nextToUnlock;
+    [SerializeField] TMP_Text unlockText;
     public int amountOfCropsToUnlock;
     public bool isSelecting;
     public SelectEffect currentActive;
+    public SelectEffect nextToUnlock;
     int nextToUnlockNumber;
     public static ShopSelectMenu instance;
     
@@ -59,6 +61,7 @@ public class ShopSelectMenu : MonoBehaviour
     }
     void Update()
     {
+        unlockText.text = "Pegue " + amountOfCropsToUnlock + " " + nextToUnlock.plantInfo.cropTypeToUnlock.Name + " " + "para desbloquear";
         if (nextToUnlockNumber > items.Length - 1)
         {
             return;

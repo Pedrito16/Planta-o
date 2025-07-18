@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Trigo
   m_EditorClassIdentifier: 
   Name: Trigo
-  value: 5
-  timeToGrows: 15
+  value: 3
+  amountOfMoneyThatGives: 7
+  timeToGrows: 20
   cropTypeToUnlock: {fileID: 0}
   cropsUntilUnlock: 0
   plantGrowSprites:
