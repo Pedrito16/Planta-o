@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dbfe80abdf96e64fbf3ced971505739, type: 3}
+  m_Name: Cenoura
+  m_EditorClassIdentifier: 
+  Name: Cenoura
+  value: 35
+  timeToGrows: 40
+  cropTypeToUnlock: {fileID: 11400000, guid: d60ae0ed6cac74d41b3d995610d02596, type: 2}
+  cropsUntilUnlock: 10
+  plantGrowSprites:
+  - {fileID: -7552322212903221865, guid: 3194951c49cb1fd4fba517c090e88287, type: 3}
+  - {fileID: 6939564438379110838, guid: 3194951c49cb1fd4fba517c090e88287, type: 3}
+  - {fileID: -2563604745995456491, guid: 3194951c49cb1fd4fba517c090e88287, type: 3}
+  - {fileID: 1515491901, guid: 3194951c49cb1fd4fba517c090e88287, type: 3}

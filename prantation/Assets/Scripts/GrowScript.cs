@@ -4,38 +4,43 @@ using UnityEngine.UI;
 using TMPro;
 public class GrowScript : MonoBehaviour
 {
-    [SerializeField] float timeToGrow = 0.5f; // Time in minutes for the weed to grow
+    public float timeToGrow = 45; // Time in seconds for the weed to grow
     public bool hasGrown = false;
-    [SerializeField] Sprite[] spritesToChange = new Sprite[4];
+    public Sprite[] spritesToChange = new Sprite[4];
     [Tooltip("Os sprites para diferentes tipos de tamanho (0%,50%, 75%, 100%")]
+    public PlantInfo info;
 
     [Header("Game Juice")]
     [SerializeField] TextMeshProUGUI growText;
     [SerializeField] Image growBar;
     [SerializeField] ParticleSystem growParticle;
     //variaveis privadas
-    SpriteRenderer spriteRenderer;
+    [SerializeField] SpriteRenderer spriteRenderer;
     float lastGrowth;
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = spritesToChange[0];
-        StartCoroutine(GrowEnumerator());
     }
     void Update()
     {
         
     }
+    public void Setup(PlantInfo plantInfo)
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        info = plantInfo;
+        timeToGrow = info.timeToGrows;
+        spritesToChange = info.plantGrowSprites;
+        spriteRenderer.sprite = spritesToChange[0];
+        StartCoroutine(GrowEnumerator());
+    }
     private IEnumerator GrowEnumerator()
     {
-        float timeInSeconds = timeToGrow * 60f;
         float iterador = 0f;
-        while(iterador < timeInSeconds)
+        while(iterador < timeToGrow)
         {
             iterador += Time.deltaTime;
             
-            CheckPercent(timeInSeconds, iterador);
-            print(iterador);
+            CheckPercent(timeToGrow, iterador);
             yield return null;
         }
     }

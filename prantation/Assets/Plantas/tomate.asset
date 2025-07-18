@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dbfe80abdf96e64fbf3ced971505739, type: 3}
+  m_Name: tomate
+  m_EditorClassIdentifier: 
+  Name: Tomate
+  value: 15
+  timeToGrows: 30
+  cropTypeToUnlock: {fileID: 11400000, guid: 58ce8394a5583444493c853d782ff6a1, type: 2}
+  cropsUntilUnlock: 10
+  plantGrowSprites:
+  - {fileID: 8236432160196758994, guid: edd870e7c6803d348b34b86343620891, type: 3}
+  - {fileID: -7302708494867152740, guid: edd870e7c6803d348b34b86343620891, type: 3}
+  - {fileID: 3932079975380651635, guid: edd870e7c6803d348b34b86343620891, type: 3}
+  - {fileID: 359486188378683659, guid: edd870e7c6803d348b34b86343620891, type: 3}

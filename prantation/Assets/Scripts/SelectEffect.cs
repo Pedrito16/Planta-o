@@ -6,9 +6,14 @@ public class SelectEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 {
     [SerializeField] GameObject selectEffect;
     [SerializeField] Image icon;
+    public PlantInfo plantInfo;
     public Image selectedBackground;
     public Image cadeado;
     public bool locked = true;
+    void Awake()
+    {
+
+    }
     void Start()
     {
         selectEffect.SetActive(false);
@@ -26,7 +31,7 @@ public class SelectEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         else
         {
             icon.color = Color.white;
-            cadeado.enabled = true;
+            cadeado.enabled = false;
             locked = false;
         }
         
@@ -40,6 +45,7 @@ public class SelectEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         {
             selectedBackground.enabled = !selectedBackground.enabled;
             shopSelect.isSelecting = !selectedBackground.enabled;
+            OnSelectPlant.instance.SetActive(selectedBackground.enabled);
         }
 
         else if (shopSelect.currentActive == null) shopSelect.SelectOther(this);
