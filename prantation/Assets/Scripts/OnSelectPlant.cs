@@ -5,6 +5,7 @@ public class OnSelectPlant : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] TextMeshProUGUI costText;
+    [SerializeField] GameObject menu;
     public Button buyButton;
     public static OnSelectPlant instance;
     private void Awake()
@@ -12,7 +13,7 @@ public class OnSelectPlant : MonoBehaviour
         instance = this;
         nameText.gameObject.SetActive(false);
         costText.gameObject.SetActive(false);
-        buyButton.gameObject.SetActive(false);
+        menu.SetActive(false);
     }
     void Start()
     {
@@ -25,8 +26,15 @@ public class OnSelectPlant : MonoBehaviour
         int money = PlayerInfos.instance.money;
         if (money >= currentActive.plantInfo.value)
         {
+            buyButton.interactable = true;
+            buyButton.GetComponent<Image>().color = Color.green;
             PlayerInfos.instance.SubtractMoney(currentActive.plantInfo.value);
             PlantSeeds.instance.Plant(currentActive.plantInfo);
+        }
+        else
+        {
+            buyButton.interactable = false;
+            buyButton.GetComponent<Image>().color = Color.red;
         }
     }
     public void OnSelect(string plantName, int cost)
@@ -39,9 +47,10 @@ public class OnSelectPlant : MonoBehaviour
     }
     public void SetActive(bool activeOrDeactive)
     {
-        buyButton.gameObject.SetActive(activeOrDeactive);
-        nameText.gameObject.SetActive(activeOrDeactive);
-        costText.gameObject.SetActive(activeOrDeactive);
+        menu.gameObject.SetActive(activeOrDeactive);
+        //buyButton.gameObject.SetActive(activeOrDeactive);
+        //nameText.gameObject.SetActive(activeOrDeactive);
+        //costText.gameObject.SetActive(activeOrDeactive);
     }
     void Update()
     {
